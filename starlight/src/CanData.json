@@ -1,4 +1,4 @@
-const CanData = [{
+[{
   "id": 2521,
   "name": "0001",
   "serial": "58010",
@@ -1599,5 +1599,3 @@ const CanData = [{
       "modifiedDate": null
   }
 }]
-
-export default CanData
