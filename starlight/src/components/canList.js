@@ -1,21 +1,24 @@
 import React from 'react'
-import Message from './Message'
+import Can from './Can'
+import CanData from '../CanData.json'
 
-const MessageList = ({messages, deleteMessages}) => {
-    const mappedMessages = messages.map((message) =>
-    <Message
+const CanList = ({CanData}) => {
+  console.log('CanData is: ', CanData)
+
+    const mappedCans = CanData.map((can) =>
+    <Can
     key={can.id}
-    message={message}
-    deleteMessages={deleteMessages}
+    can={can}
     />
   )
+
   return (
     <div className="container">
       <ul className="list-group">
-        {mappedMessages}
+        {mappedCans}
       </ul>
     </div>
   )
 }
 
-export default MessageList
+export default CanList

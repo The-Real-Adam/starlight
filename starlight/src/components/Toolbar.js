@@ -17,9 +17,8 @@ const Toolbar = ({cans, seeker}) => {
     <div className="row justify-content-center ">
       <br />
       <div className="col align-self-center">
-        <h4>Message Count <span className="badge badge-pill badge-primary">{totalCount}</span></h4>
+        <h4>Can Count: <span className="badge badge-pill badge-primary">{totalCount}</span></h4>
         <input onChange={ searchFor }  id="search" name="search" type="text" placeholder="Search Here"></input>
-        <button className="btn btn-default" onClick={toggleCompose} type="button" id="compose">Compose</button>
         <br />
       </div>
       <br />
