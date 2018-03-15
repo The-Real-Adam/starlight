@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import CanData from './CanData.json'
 import Toolbar from './components/Toolbar'
 import CanList from './components/CanList'
 

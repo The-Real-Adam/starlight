@@ -1,6 +1,6 @@
 import React from 'react'
 import Can from './Can'
-import CanData from '../CanData.json'
+import CanData from './CanData.json'
 
 const CanList = ({CanData}) => {
   console.log('CanData is: ', CanData)
