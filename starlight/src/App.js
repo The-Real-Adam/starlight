@@ -5,6 +5,27 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+
+
+  constructor(props){
+  super(props)
+  this.state= {cans: [], filtered: []}
+  }
+
+
+
+  seeker = (searchTerm) => {
+    const match = this.state.cans.filter(can => {
+      return (can.size.toLowerCase().includes(searchTerm.toLowerCase()))
+    })
+    this.setState({
+      filtered: [...match]
+    })
+  }
+
+
+
   render() {
     return (
       <div className="App">
