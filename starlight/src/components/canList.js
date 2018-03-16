@@ -2,10 +2,10 @@ import React from 'react'
 import Can from './Can'
 import CanData from './CanData.json'
 
-const CanList = ({CanData}) => {
-  console.log('CanData is: ', CanData)
+const CanList = ({cans}) => {
+  console.log('cans is: ', cans)
 
-    const mappedCans = CanData.map((can) =>
+    const mappedCans = cans.map((can) =>
     <Can
     key={can.id}
     can={can}
