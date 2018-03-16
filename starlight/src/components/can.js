@@ -1,5 +1,6 @@
 import React from 'react'
 
+//Gets passed cans from CanList map function, and for each of the loops creates a listed item
 const Can = ({can}) => {
   return (
     <div>

@@ -1,5 +1,6 @@
 import React from 'react'
 
+//Toolbar holds the can counter as well as the search bar where you can tpye in a size and it will return matching results in real time
 const Toolbar = ({cans, seeker}) => {
 
   const totalCount = cans.length
@@ -7,10 +8,6 @@ const Toolbar = ({cans, seeker}) => {
   const searchFor = (e) => {
     e.preventDefault()
     seeker(e.target.value)
-  }
-
-  const clear = (e) => {
-    e.target.search.value = ''
   }
 
   return(

@@ -8,20 +8,20 @@ import './App.css';
 class App extends Component {
 
 
-
+  //state.cans is all the data, and state.filtered is for displaying the data that is currently being searched for.
   constructor(props){
   super(props)
   this.state= {cans: [], filtered: []}
   }
 
+  //this is me queriying the API I made
   async componentDidMount() {
       const response = await fetch(`${process.env.REACT_APP_API_URL}/cans`)
-      console.log('response is: ', response);
       const json = await response.json()
-      console.log('json is: ', json)
       this.setState({cans: json, filtered: json})
     }
 
+  //this passes into the toolbar to make searches
   seeker = (searchTerm) => {
     const match = this.state.cans.filter(can => {
       return (can.size.toLowerCase().includes(searchTerm.toLowerCase()))
@@ -32,7 +32,7 @@ class App extends Component {
   }
 
 
-
+  //renders the data thats been modified from the state through components to display on screen.
   render() {
     return (
       <div className="App">

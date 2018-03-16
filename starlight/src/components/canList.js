@@ -1,10 +1,8 @@
 import React from 'react'
 import Can from './Can'
-import CanData from './CanData.json'
 
+//Passes the JSON from the state which gets passed down to cans to make a list. Can.js makes the items this makes the list.
 const CanList = ({cans}) => {
-  console.log('cans is: ', cans)
-
     const mappedCans = cans.map((can) =>
     <Can
     key={can.id}
